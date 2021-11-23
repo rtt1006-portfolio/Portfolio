@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 메타 -->
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        <title>박유진 포토폴리오</title>
+        <!--swiper script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js" integrity="sha512-XHnWZWvy5TkCnPgLU7XsWhGAks1JQ3uFutVxRSH0Z4+djsGkCkxVsYu+JgfrDicvbCmjfUf1HeMWYUvUYKgjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!-- font-awesome script -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- css sytle link -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <section class="wrapper">
+            <section class="header">
+                <div class="container header-container">
+                    <div class="contents" id="btn-flow">:)
+                        <a href="#work" rel="modal:open"></a> 
+                    </div>
+                    <div class="nav" id="nav">
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about-me">ABOUT ME</a></li>
+                            <li><a href="#project">PROJECT</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-nav" id="btn-nav">
+                        <span>라인</span>
+                        <span>라인</span>
+                        <span>라인</span>
+                    </div>
+                </div>
+                <div class="line">라인</div>
+            </section>
+            <section class="section home" id="home">
+                <div class="container container-home">
+                    <h1>HOME</h1>
+                    <strong>Hi, I am&nbsp;&nbsp;</strong>
+                    <div class="silde">
+                        <ul class="textSlide">
+                            <li class="slide-txt">도전하는</li>
+                            <li class="slide-txt">함께하는</li>
+                            <li class="slide-txt">성장하는</li>
+                        </ul>
+                    </div>
+                    <p> 개발자 박유진입니다!</p>
+                    <div class="img-box">
+                        <img src="./images/me01.jpg" alt="자기소개 이미지01">
+                    </div>
+                </div>
+            </section>
+            <section class="section about-me" id="about-me">
+            <h1>ABOUT ME</h1>
+                <section class="container container-about-me">
+                    <div class="container container-aobut-me01">경력<br>2021 UI/UX 웹 과정 수료<br>2021 정보처리기사 실기응시<br>2022 SCU컴퓨터공학과 졸업</div>
+                    <div class="container container-aobut-me02">사용가능기술<br>#PhotoShop #illustator<br>#HTML5&nbsp;#CSS3&nbsp;#jQuery<br>#After Effect #Premiere Pro</div>
+                    <div class="container container-aobut-me03">
+                        <img class="images-red" src="./images/me02.jpg" alt="이미지02">
+                        <div class="mouse-box">
+                            <i id="mouse" class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                        <input id="open-modal" class="cover-letter-btn" type="button" value="자기소개서 바로가기"> 
+                        <div class="pop-up modal">
+                            <article class="cover-letter">
+                                <img src="./images/work-flow/자기소개서01.png" alt="자기소개서 이미지01">
+                                <img src="./images/work-flow/지원동기.png" alt="자기소개서 이미지02">
+                                <img src="./images/work-flow/학교경험.png" alt="자기소개서 이미지03">
+                                <img src="./images/work-flow/성격의장단점.png" alt="자기소개서 이미지04">
+                                <img src="./images/work-flow/성장배경.png" alt="자기소개서 이미지05">   
+                                <input id="close-modal" type="button" value="닫기">
+                            </article>
+                        </div>
+                </section>
+            </section>
+            <section class="section project" id="project">
+                <h1>PROJECT</h1>
+                <div class="container container-project">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide portfolio">
+                                <div class="img-box">
+                                    <img src="./images/magabox.png" alt="메가박스 포토폴리오">
+                                </div>
+                            </div>
+                            <div class="swiper-slide portfolio">
+                                <div class="img-box">
+                                    <img src="./images/hollys.png" alt="할리스 포토폴리오">
+                                </div>
+                            </div>
+                            <div class="swiper-slide portfolio">
+                                <div class="img-box">
+                                    <img src="./images/hansole.png" alt="한솔제지 포토폴리오">
+                                </div>
+                            </div>
+                            <div class="swiper-slide portfolio">
+                                <div class="img-box">
+                                    <img src="./images/indigo.png" alt="인디고 포토폴리오">
+                                </div>
+                            </div>
+                            <div class="swiper-slide portfolio">
+                                <div class="img-box">
+                                    <img src="./images/tourlist.png" alt="투어리스트 포토폴리오">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <a class="portfolio-btn-a" href="https://rtt1006-portfolio.github.io/Project-2/">
+                        <input type="button" value="포토폴리오 바로가기" class="portfolio-btn">
+                        </a>
+                    </div>                            
+                </div>
+
+            </section>
+            <section class="section contact" id="contact">
+            <h1>CONTACT</h1>
+                <div class="container container-contact">
+                    <div class="img-box-contact">
+                        <div class="img-box01">
+                            <img src="./images/팝업이미지.png" alt="contact-images">
+                        </div>
+                        <div class="img-box02">
+                            <img src="./images/contact.jpg" alt="contact-images">
+                            <p class="p1">겉보기에 화려함보다<br>최적의 사용자 경험을 제공하는 것을 목표로 하는<br> 웹 퍼블리셔, 박유진이 되겠습니다.</p><br>
+                            <p class="p2">이름:박유진 女<br>연락처:010-4714-0705<br>이메일:pyou97@naver.com</p>
+                        </div>
+                    </div>    
+
+                </div>
+            </section>
+            <section class="section footer">
+                <div class="container container-footer">
+                    <p>방문해주셔서 감사합니다. THANK YOU:)</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- mobile-nav script -->
+        <script>
+            $('#btn-nav').click(function () {
+                $('#nav').slideToggle(300);
+            })
+        </script>
+        <!-- home textslide script -->
+        <script>
+        //텍스트 슬라이드
+            let textSlide = 0;
+            carousel();
+
+            function carousel() {
+            let i;
+            const text = document.getElementsByClassName("slide-txt");
+            for (i = 0; i < text.length; i++) {
+                text[i].style.display = "none";
+            }
+            textSlide++;
+            if (textSlide > text.length) {
+                textSlide = 1;
+            }
+            text[textSlide - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            }
+
+        </script>
+        <!-- about-me mouse hover script -->
+        <script>
+            $('.images-red').hover(function(){
+                $('#mouse').hide(1);
+            })
+        </script>
+        <!-- about-me modal script -->
+        <script>
+            $('#btn-flow').on({
+                'click':function(){
+                    $('.work-content').load('./modal.txt .work-flow');
+                }
+            })
+
+            $('#btn-cover-letter').on({
+                'click':function(){
+                    $('.cover-letter-content').load('./modal.txt .cover-letter');
+                }
+            })
+
+            $('#close-btn').click(function(){
+                $('#cover-letter').css('display','none');
+            })
+
+            $(function(){
+                $('#open-modal').click(function(){
+                    $('body').css({
+                        'height':'100vh',
+                        'overflow-y': 'hidden',
+                    })                
+                    
+                    $('.modal').css({
+                        'display':'block',                    
+                    }) 
+                })  
+
+                $('#close-modal').click(function(){
+                    $('body').css({
+                        'height':'auto',
+                        'overflow-y': 'auto',
+                    })                
+                    
+                    $('.modal').css({
+                        'display':'none',                    
+                    }) 
+                })
+            })
+
+        </script>   
+        <!-- project Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            // slidesPerView: 1.5,
+            // spaceBetween: 30,
+            // breakpoints: {
+            //   640: {
+            //     slidesPerView:2.5,
+            //     spaceBetween: 20,
+            //   },
+            
+            //   1220: {
+            //     slidesPerView:3.5,
+            //     spaceBetween: 50,
+            //   },
+            // }
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    
+    </body>
+</html>
