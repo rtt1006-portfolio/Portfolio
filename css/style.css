@@ -9,21 +9,26 @@
     .btn-nav {width: 25px;height: 20px;display: flex;flex-flow: column nowrap;justify-content: space-between;}
     .btn-nav span {width: 100%;height: 2px;background-color: #000;text-indent:-99999px;cursor: pointer;}
     .line {width: 100%;height: 1px;background-color: #000;text-indent: -99999px;}
-    .header-container .contents{
-        animation: rotate90 8s 2s forwards;
-    }
+    .header-container .contents{animation: rotate90 8s 2s forwards;}
     @keyframes rotate90{0%{transform:rotate(0deg)}25%{transform:rotate(90deg)}50%{transform:rotate(180deg)}75%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
     @keyframes animatetop{0%{top:90px;opacity:0;}100%{top:107px;opacity:1;}}
 
+    .pop-up{display:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:99998;background-color: rgba(0,0,0,0.5);overflow-x:hidden;overflow-y:auto;}
+    .pop-up .container{margin:0 auto;background-color:rgba(0,0,0,0.9);}
+    .pop-up .container video{width:100%;margin-bottom:20px;}
+    .pop-up>.container>h1{padding:10px 10px;color:white;}
+    .pop-up>.container>img{margin-bottom:20px;}
+    #btn2{position:absolute;right:7px;top:5px;color:aliceblue;font-size:25px;}
+
     /* home style */
     .section.home{padding-top:80px;}
-    .section.home .container {display: flex;flex-flow: row wrap;}
-    .section.home h1 {margin-left: 10px;font-weight: 500;font-size: 22px;}
-    .section.home p {width: 100%;padding-top: 30px;padding-bottom: 15px;font-weight: 500;font-size: 16px;text-align: center;color: rgb(37, 92, 241);}
+    .section.home .container {padding:0 10px;display: flex;flex-flow: row wrap;justify-content: center;}
+    .section.home h1 {width:100%;font-weight: 500;font-size: 22px;}
+    .section.home p {width: 100%;padding-bottom: 15px;font-weight: 500;font-size: 16px;text-align: center;color: rgb(37, 92, 241);}
     .section.home .img-box {padding:0 50px;text-align: center;}
     .section.home img {width:70%;}
-    .textSlide {position:absolute;left:185px;top:108px;padding-top: 10px;font-weight: 500;font-size: 16px;text-align:center;color:rgb(37, 92, 241);animation:animatetop 3s infinite;}
-    strong {position:absolute;left:130px;top:119px;text-align:center;}
+    .textSlide {font-weight: 500;font-size: 16px;text-align:center;color:rgb(37, 92, 241);animation:animatetop 3s infinite;}
+    strong {text-align:center;}
 
     /* about me sytle */
     .section.about-me{padding:0 10px;}
@@ -39,7 +44,7 @@
     #mouse{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:black;}
     .pop-up.modal{padding:20px 20px;z-index:9999;}
     .cover-letter{padding:90px 0px;}
-    #close-modal{width:30%;display: block;margin: 5% 35%;height: 25px;border: 1px dotted;border-radius: 10px;background-color: bisque;font-weight: 900;font-size: 10px;}
+    #close-modal{width:30%;display: block;margin: 5% 35%;height: 25px;border: 1px dotted;border-radius: 10px;background-color: bisque;font-weight: 900;font-size: 10px;color:black;}
 
     /*PROJECT STYLE*/
     .section.project{padding:0 10px;}
@@ -48,14 +53,50 @@
     .swiper-button-next,.swiper-button-prev{color:black;}
 
     /*CONTACT STYLE*/
-    .section.contact{padding:30px 10px;}
-    .section.contact h1{padding:10px 0;font-weight: 500;font-size: 22px;}
-    .img-box-contact{display:flex;flex-flow:row nowrap;}
-    .img-box-contact .img-box01{width:55%;height:80%;}
-    .img-box-contact .img-box02{position: relative;width:100%;height:100%;}
-    .img-box-contact .img-box02 .p1{position:absolute;left:20px;top:20px;text-align: center;color:#290d0d;font-size:2.5vw;font-weight: 700;}
-    .img-box-contact .img-box02 .p2{position: absolute;left:42px;top:112px;text-align: left;font-size:2.5vw;font-weight: 500;}
+    .section.contact{
+        padding:30px 10px;
+    }
+    .section.contact h1{
+        padding:10px 0;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .img-box01{
+        flex:1;
+    }
+    .img-box02{
+        flex:2;
 
+    }
+    .img-box-contact{
+        display:flex;
+        flex-flow:row nowrap;
+    }
+    .contact-images{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .p1,.p2{
+        position:absolute;
+        left:0;
+        top:17px;
+        right:0;
+        bottom: 0;
+        text-align:center;
+    }
+    .p1{
+        color:rgb(78, 1, 1);
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .p2{
+        text-align:left;
+        top:24px;
+        left:42px;
+        font-size: 10px;
+    }
     /*FOOTER STYLE*/
     .container.container-footer{padding:5px;border-top:1px solid black;text-align: center;}
 
@@ -70,13 +111,10 @@
         .btn-nav {display: none;}
 
         /* home style */
-        .section.home h1{padding-top: 20px;font-size: 3em;}
-        .textSlide, strong{width:100%;text-align:center;font-size:28px;position: absolute;transform: translate(-10%, 10%);}
-        .section.home{padding:10px;}
-        .section.home p{width: 100%;font-size: 28px;padding:10px 0;}
-        .section.home .img-box {width:50%;margin:0 auto;}
-        .section.home .textSlide{transform:translate(-10%,49%);}
-        strong{transform: translate(-15%, 55%);}
+        .section.home{padding:20px 20px;}
+        .section.home h1{font-size: 3em;}
+        .section.home p, strong, .textSlide{font-size: 2.8em;}
+        .section.home .img-box {width:80%;padding:0 auto;margin:0 auto;}
 
         /* about me sytle */
         .section.about-me{padding-top: 80px;}

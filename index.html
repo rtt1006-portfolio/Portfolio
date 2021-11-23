@@ -18,15 +18,35 @@
         <!-- css sytle link -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
+        <div class="pop-up" id="pop-up">
+            <div class="container">
+                <h1>#PORTFOLIO</h1>
+                <video src="./media/intro.mp4" autoplay controls loop></video>
+                <h1>#와이어프레임 - 모바일</h1>
+                <video src="./media/moblie.mp4" controls loop></video>
+                <h1>#와이어프레임 - PC</h1>
+                <video src="./media/pc.mp4" controls loop></video>
+                <h1>#스토리보드</h1>
+                <img src="./images/img01.jpg" alt="스토리보드이미지">
+                <h1>#무드보드</h1>
+                <img src="./images/img02.PNG" alt="무드보드이미지">
+                <h1>#키워드</h1>
+                <img src="./images/img03.jpg" alt="키워드이미지">
+                <i id="btn2" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+
         <section class="wrapper">
             <section class="header">
                 <div class="container header-container">
-                    <div class="contents" id="btn-flow">:)
-                        <a href="#work" rel="modal:open"></a> 
-                    </div>
+                    <a id="btn1" href="#">
+                        <div class="contents" id="btn-flow">:)
+                        </div>
+                    </a>
                     <div class="nav" id="nav">
                         <ul>
                             <li><a href="#home">HOME</a></li>
@@ -129,16 +149,20 @@
             <h1>CONTACT</h1>
                 <div class="container container-contact">
                     <div class="img-box-contact">
-                        <div class="img-box01">
+                        <div class="img-box01" data-aos="fade-right">
                             <img src="./images/팝업이미지.png" alt="contact-images">
                         </div>
                         <div class="img-box02">
-                            <img src="./images/contact.jpg" alt="contact-images">
-                            <p class="p1">겉보기에 화려함보다<br>최적의 사용자 경험을 제공하는 것을 목표로 하는<br> 웹 퍼블리셔, 박유진이 되겠습니다.</p><br>
-                            <p class="p2">이름:박유진 女<br>연락처:010-4714-0705<br>이메일:pyou97@naver.com</p>
+                            <div class="contact-images">
+                                <img src="./images/contact01.png" alt="contact-images01">
+                                <p class="p1">겉보기에 화려함보다<br>최적의 사용자 경험을 제공하는 것을 목표로 하는<br> 웹 퍼블리셔, 박유진이 되겠습니다.</p><br>
+                            </div>
+                            <div class="contact-images">
+                                <img src="./images/contact02.png" alt="contact-images02">
+                                <p class="p2">이름:박유진 女<br>연락처:010-4714-0705<br>이메일:pyou97@naver.com</p>
+                            </div>
                         </div>
                     </div>    
-
                 </div>
             </section>
             <section class="section footer">
@@ -152,6 +176,9 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
+        <!-- AOS -->        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <!-- mobile-nav script -->
         <script>
             $('#btn-nav').click(function () {
@@ -204,6 +231,7 @@
             })
 
             $(function(){
+                //모달오픈
                 $('#open-modal').click(function(){
                     $('body').css({
                         'height':'100vh',
@@ -214,7 +242,7 @@
                         'display':'block',                    
                     }) 
                 })  
-
+                //모달닫기
                 $('#close-modal').click(function(){
                     $('body').css({
                         'height':'auto',
@@ -222,6 +250,28 @@
                     })                
                     
                     $('.modal').css({
+                        'display':'none',                    
+                    }) 
+                })
+                //멀티미디어 오픈
+                $('#btn-flow').click(function(){
+                    $('body').css({
+                        'height':'100vh',
+                        'overflow-y': 'hidden',
+                    })                
+                    
+                    $('#pop-up').css({
+                        'display':'block',                    
+                    }) 
+                })  
+                //멀티미디어 닫기
+                $('#btn2').click(function(){
+                    $('body').css({
+                        'height':'auto',
+                        'overflow-y': 'auto',
+                    })                
+                    
+                    $('#pop-up').css({
                         'display':'none',                    
                     }) 
                 })
@@ -249,7 +299,11 @@
                 prevEl: ".swiper-button-prev",
             },
             });
+
+            AOS.init();
         </script>
+
+       
     
     </body>
 </html>
