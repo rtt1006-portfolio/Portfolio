@@ -20,9 +20,9 @@
 
 ## PORTFOLIO
 [개인포트폴리오 디자인](https://rtt1006-portfolio.github.io/Project-2/)  
-![모바일시안](./images/portfolio-m.png)
+![모바일시안](./images/work-flow/portfolio-m.png)
 *
-![데스크탑시안](./images/portfolio-p.png)
+![데스크탑시안](./images/work-flow/portfolio-p.png)
 *
 ![메가박스](./images/magabox.png)
 [메가박스](https://rtt1006-portfolio.github.io/Megabox/)  
@@ -30,7 +30,7 @@
 [한솔](https://rtt1006-portfolio.github.io/Hansole/)  
 ![할리스](./images/hollys.png)
 [할리스](https://github.com/rtt1006-portfolio/Hollys)  
-![인디고](./images/indigo.png)
+![인디고](./images/INDIGO.png)
 [인디고](https://rtt1006-portfolio.github.io/Indigo/)  
 ![투어리스트](./images/tourlist.png)
 [투어리스트](https://rtt1006-portfolio.github.io/Tourist/)
