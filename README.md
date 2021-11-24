@@ -11,6 +11,14 @@
 ## WORK FLOW
 ### 와이어프레임
 
+
+https://user-images.githubusercontent.com/93187201/143182797-407184c1-ede3-4bff-aa42-f1fea0e53dc2.mp4
+
+
+https://user-images.githubusercontent.com/93187201/143182806-f3007293-54ac-45f2-a807-bca6c00ac0fe.mp4
+
+
+
 ### 스토리보드
 ![스토리보드](./images/img01.jpg)
 ### 무드보드
