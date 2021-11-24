@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/93187201/143182806-f3007293-54ac-45f2-
 ![키워드](./images/img03.jpg)
 
 ## PORTFOLIO
-[개인포트폴리오 디자인](https://rtt1006-portfolio.github.io/Project-2/)  
+[개인포트폴리오 ](https://rtt1006-portfolio.github.io/Project-2/)  
 ###  시안
 ![모바일시안](./images/work-flow/portfolio-m.png)
 ### 데스크탑 시안
