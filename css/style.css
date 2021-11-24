@@ -51,55 +51,19 @@
     .section.project h1{padding-top: 30px;font-weight: 500;font-size: 22px;}
     .portfolio-btn{width:40%;display:block;margin:0 auto;height:25px;border:1px dotted;border-radius:11px;background-color: bisque;font-weight:900;font-size:10px;color:black;}
     .swiper-button-next,.swiper-button-prev{color:black;}
-    .swiper-wrapper{
-        transform: translate3d(0px, 22px, 0px);
-    }
+    .swiper-wrapper{transform: translate3d(0px, 0px, 0px);}
 
     /*CONTACT STYLE*/
-    .section.contact{
-        padding:30px 10px;
-    }
-    .section.contact h1{
-        padding:10px 0;
-        font-weight: 500;
-        font-size: 22px;
-    }
-    .img-box01{
-        flex:1;
-    }
-    .img-box02{
-        flex:2;
+    .section.contact{padding:30px 10px;}
+    .section.contact h1{padding:10px 0;font-weight: 500;font-size: 22px;}
+    .img-box01{flex:1;}
+    .img-box02{flex:2;}
+    .img-box-contact{display:flex;flex-flow:row nowrap;}
+    .contact-images{position:relative;display:flex;justify-content: center;align-items:center;font-size: 2vw;}
+    .p1,.p2{position:absolute;left:0;top:25%;right:0;bottom: 0;text-align:center;}
+    .p1{color:rgb(78, 1, 1);font-weight: 700;}
+    .p2{text-align:left;top:57%;left:46%;transform: translate(-50%,-50%);}
 
-    }
-    .img-box-contact{
-        display:flex;
-        flex-flow:row nowrap;
-    }
-    .contact-images{
-        position:relative;
-        display:flex;
-        justify-content: center;
-        align-items:center;
-        font-size: 2vw;
-    }
-    .p1,.p2{
-        position:absolute;
-        left:0;
-        top:25%;
-        right:0;
-        bottom: 0;
-        text-align:center;
-    }
-    .p1{
-        color:rgb(78, 1, 1);
-        font-weight: 700;
-    }
-    .p2{
-        text-align:left;
-        top:57%;
-        left:46%;
-        transform: translate(-50%,-50%);
-    }
     /*FOOTER STYLE*/
     .container.container-footer{padding:5px;border-top:1px solid black;text-align: center;}
 
@@ -137,14 +101,6 @@
         /* CONTACT STYLE */
         .section.contact h1{padding-left:40px;padding-bottom:30px;font-size: 3em;}
         .section.contact{margin-top:60px;}
-        .img-box-contact .img-box02 .p1 {
-            left: 37%;
-            top: 50%;
-            transform: translate(-30%, -50%);
-        }
-        .img-box-contact .img-box02 .p2 {
-            left: 50%;
-            top: 50%;
-            transform: translate(-66%,0%);
-        }
+        .img-box-contact .img-box02 .p1 {left: 37%;top: 50%;transform: translate(-30%, -50%);}
+        .img-box-contact .img-box02 .p2 {left: 50%;top: 50%;transform: translate(-66%,0%);}
     }
