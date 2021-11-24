@@ -6,6 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- 메타 -->
+        <meta name="apple-mobile-web-app-title" content="PORTFOLIO">
+        <meta name="robots" content="웹 퍼블리셔 박유진 포토폴리오 입니다.">
+        <meta name="description" content="사용자에게 기억에 남는 UI/UX를 제공하기 위해 공부하고 있는 박유진이라고 합니다. 반갑습니다:)">
+        <meta property="og:title" content="PARKYUJIN-PORTFOLIO">
+        <meta property="og:url" content="https://github.com/rtt1006-portfolio/Portfolio">
+        <meta property="og:image" content="./images/me01.jpg">
+        <meta property="og:description" content="사용자에게 기억에 남는 UI/UX를 제공하기 위해 공부하고 있는 박유진이라고 합니다. 반갑습니다:)">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="PARKYUJIN-PORTFOLIO">
+        <meta name="twitter:url" content="https://github.com/rtt1006-portfolio/Portfolio">
+        <meta name="twitter:image" content="./images/me01.jpg">
+        <meta name="twitter:description" content="사용자에게 기억에 남는 UI/UX를 제공하기 위해 공부하고 있는 박유진이라고 합니다. 반갑습니다:)">
+
         <!-- 파비콘 -->
         <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
         <title>박유진 포토폴리오</title>
@@ -15,10 +28,11 @@
         <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <!-- font-awesome script -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- AOS script -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- css sytle link -->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
@@ -173,42 +187,62 @@
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
         <!-- AOS -->        
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <!-- mobile-nav script -->
+        <!--body script -->
         <script>
+        //mobile-nav script
             $('#btn-nav').click(function () {
                 $('#nav').slideToggle(300);
             })
-        </script>
-        <!-- home textslide script -->
-        <script>
-        //텍스트 슬라이드
+
+        //home textslide script
             let textSlide = 0;
-            carousel();
+                carousel();
 
-            function carousel() {
-            let i;
-            const text = document.getElementsByClassName("slide-txt");
-            for (i = 0; i < text.length; i++) {
-                text[i].style.display = "none";
-            }
-            textSlide++;
-            if (textSlide > text.length) {
-                textSlide = 1;
-            }
-            text[textSlide - 1].style.display = "block";
-            setTimeout(carousel, 3000);
+                function carousel() {
+                let i;
+                const text = document.getElementsByClassName("slide-txt");
+                for (i = 0; i < text.length; i++) {
+                    text[i].style.display = "none";
+                }
+                textSlide++;
+                if (textSlide > text.length) {
+                    textSlide = 1;
+                }
+                text[textSlide - 1].style.display = "block";
+                setTimeout(carousel, 3000);
             }
 
-        </script>
-        <!-- about-me mouse hover script -->
-        <script>
+        //about-me mouse hover script
             $('.images-red').hover(function(){
-                $('#mouse').hide(1);
+                    $('#mouse').hide(1);
             })
+
+        //project Initialize Swiper
+            var swiper = new Swiper(".mySwiper", {
+            // slidesPerView: 1.5,
+            // spaceBetween: 30,
+            // breakpoints: {
+            //   640: {
+            //     slidesPerView:2.5,
+            //     spaceBetween: 20,
+            //   },
+            
+            //   1220: {
+            //     slidesPerView:3.5,
+            //     spaceBetween: 50,
+            //   },
+            // }
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+
+        //aos
+            AOS.init();
         </script>
         <!-- about-me modal script -->
         <script>
@@ -276,32 +310,5 @@
             })
 
         </script>   
-        <!-- project Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-            // slidesPerView: 1.5,
-            // spaceBetween: 30,
-            // breakpoints: {
-            //   640: {
-            //     slidesPerView:2.5,
-            //     spaceBetween: 20,
-            //   },
-            
-            //   1220: {
-            //     slidesPerView:3.5,
-            //     spaceBetween: 50,
-            //   },
-            // }
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-
-            AOS.init();
-        </script>
-
-       
-    
     </body>
 </html>
