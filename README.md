@@ -2,7 +2,16 @@
 
 ## 보유자격 및 경력
 * 운전면허 2종 보통
+* 컴퓨터활용 능력 2급
+* 심리상담사 1급
 * 정보처리기사 실기응시
+
+
+## 대내&외 활동 경험
+* 의료공과대학 기자단 2년 활동
+* 삼성나눔전자봉사단 6기 수료
+* 사회리더대학생 멘토링 12기 활동
+* 연희직업전문학교 UI/UX 웹디자인 과정 수료
 
 ## 사용가능기술
 * HTML5, CSS3, JQuery, 스프링게시판 구현
@@ -11,13 +20,8 @@
 ## WORK FLOW
 ### 와이어프레임
 
-
 https://user-images.githubusercontent.com/93187201/143182797-407184c1-ede3-4bff-aa42-f1fea0e53dc2.mp4
-
-
 https://user-images.githubusercontent.com/93187201/143182806-f3007293-54ac-45f2-a807-bca6c00ac0fe.mp4
-
-
 
 ### 스토리보드
 ![스토리보드](./images/img01.jpg)
